@@ -26,6 +26,9 @@ pre-commit para lint, mensagens convencionais de commit e bateria de testes, evi
 
 O backend foi desenvolvido na versão 20 do node.  
 
+O arquivo .env.example possui variáveis de exemplo que devem ser usadas como referência para a criação de um .env.local,
+onde serão utilizados os valores reais de desenvolvimento.
+
 Para rodá-lo, faça:
 
 ```console
@@ -36,11 +39,20 @@ Para rodá-lo, faça:
 
 Caso deseje rodar em modo desenvolvimento, sem copilar para javascript, faça:
 
-
 ```console
 > cd BACK
 > npm i
 > npm run start:dev
+```
+
+Para rodar a aplicação via docker, deverá criar um arquivo .env na raiz do projeto com os valores que serão utilizados pela aplicação.
+Além disso, para subir uma instância local do postgres as variáveis de usuário, senha e nome do banco de dados também devem 
+estar presentes neste .env. São elas:
+
+```dotenv
+POSTGRES_DB=
+POSTGRES_USER=
+POSTGRES_PASSWORD=
 ```
 
 ## Problemas encontrados
