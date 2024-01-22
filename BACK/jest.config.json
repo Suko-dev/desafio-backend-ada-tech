@@ -1,6 +1,5 @@
 {
   "verbose": true,
-  "transform": {
-    "^.+\\.(t|j)sx?$": "@swc/jest"
-  }
+  "preset": "ts-jest",
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts?$"
 }

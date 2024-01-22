@@ -1,6 +1,9 @@
 .idea
 */node_modules/
 
-BACK/.env.local
 */.env.*
+.env
 */coverage/
+*/dist
+
+.docker
